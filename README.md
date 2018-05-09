@@ -1,3 +1,8 @@
 # IF5282-Ensemble-Translator
 
-Baca TODO List
+TODO:
+- Implementasi submodul-submodul:
+  - buat repositori baru di akun sendiri
+  - Lakukan `git add submodule` ke sini
+
+- Implementasi program translator
