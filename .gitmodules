@@ -1,0 +1,3 @@
+[submodule "englishgrammarscoring"]
+	path = englishgrammarscoring
+	url = https://github.com/muhammadnizami/englishgrammarscoring
