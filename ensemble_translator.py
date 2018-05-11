@@ -8,8 +8,10 @@ class EnsembleTranslator:
 		self.scorer=scorer;
 
 	def translate(self,sentence):
-		candidateTranslations = ["This is an example sentence", "This are an example sentence", "This did was it example sentences"]
-		#TODO ganti jadi: candidateTranslations = [translator.translate(sentence) for translator in translators]
+		candidateTranslations = [translator.translateSentence(sentence) for translator in self.translators]
 		scores = self.scorer.predict(candidateTranslations)
 		i = scores.index(max(scores))
-		return candidateTranslations[i]
+		return candidateTranslations[i], candidateTranslations
+
+	def translateSentences(self, sentences):
+		return [self.translate(sentence) for sentence in sentences]
