@@ -1,3 +1,6 @@
 [submodule "englishgrammarscoring"]
 	path = englishgrammarscoring
 	url = https://github.com/muhammadnizami/englishgrammarscoring
+[submodule "naivew2wsmt"]
+	path = naivew2wsmt
+	url = ./naivew2wsmt
